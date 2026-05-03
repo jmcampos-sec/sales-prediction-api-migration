@@ -22,3 +22,5 @@ jobs:
 
       - name: Ejecutar tests con cobertura
         run: pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=70
+        env:
+          PYTHONPATH: ${{ github.workspace }}
