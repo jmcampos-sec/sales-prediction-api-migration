@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install -r requisitos.txt
+        run: pip install -r requirements.txt
 
       - name: Ejecutar tests con cobertura
-        run: pytest pruebas/ --cov=aplicación --cov-report=term-missing --cov-fail-under=70
+        run: pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=70
